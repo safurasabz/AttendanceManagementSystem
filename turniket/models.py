@@ -23,18 +23,22 @@ class Staff(models.Model):
 
 
 class Log(models.Model):
-    staff_id = models.IntegerField()
-    #graph = models.IntegerField()
+    fullname = models.CharField(max_length=30)
     date = models.CharField(max_length=20)
-    came = models.CharField(max_length=10)
-    gone = models.CharField(max_length=10)
-    early_came = models.IntegerField()
-    late_came = models.IntegerField()
-    early_gone = models.IntegerField()
-    late_gone = models.IntegerField()
+    came = models.CharField(max_length=20)
+    gone = models.CharField(max_length=20)
+    early_came = models.CharField(max_length=20)
+    late_came = models.CharField(max_length=20)
+    early_gone = models.CharField(max_length=20)
+    late_gone = models.CharField(max_length=20)
     build_exit = models.IntegerField()
-    distraction = models.IntegerField()
-    overall_ghour = models.IntegerField()
-    overall_hour = models.IntegerField()
+    distraction = models.CharField(max_length=20)
+    overall_ghour = models.CharField(max_length=20)
+    overall_hour = models.CharField(max_length=20)
+    # staff_id = models.IntegerField()
+    # graph = models.IntegerField()
+
+    def __str__(self):
+        return self.fullname
 
 

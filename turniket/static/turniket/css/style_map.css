@@ -1,3 +1,31 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Job Pro
+Version:	1.0.0
+Author:     Webstrot
+Website: 
+Purchase: 
+-------------------------------------------------------------------
+[Table of contents]
+ 
+1. Body
+2. Custom css / a
+3. Preloader/ #preloader
+4. Navigation
+5. Slider
+6. Tranding Slider
+7. Hiring Slider
+8. Recent Jobs
+9. Caunter
+10. Offering Slider
+11. Testimonial Slider
+12. Pricing Section
+13. Mobail Apps Downlord Section
+14. Notification Section
+15. Footer
+
+*/
 
 /*--------- Body Strat -------*/
 body, html {
@@ -65,6 +93,133 @@ ul{
 	padding:0;
 }
 /*-- Header Css Start --*/	
+.jp_map_indx_wrapper{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.jp_map_indx_wrapper #map{
+	width:100%;
+	height:900px;
+}
+.jp_slider_form_main_wrapper{
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:380px;
+	background:rgba(14, 20, 39, 0.58);
+	border-top:1px solid #23c0e9;
+	padding-top:60px;
+	padding-bottom:60px;
+	padding-left:50px;
+	padding-right:50px;
+}
+.jp_main_slider_heading_wrapper{
+	float:left;
+	width:100%;
+}
+.jp_main_slider_heading_wrapper h2{
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+	text-transform:uppercase;
+	position:relative;
+	margin-top: -9px;
+}
+.jp_main_slider_heading_wrapper h2:before {
+    content: '';
+    border: 1px solid #23c0e9;
+    width: 8px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.jp_main_slider_heading_wrapper h2:after {
+    content: '';
+    border: 1px solid #23c0e9;
+    width: 30px;
+    position: absolute;
+    bottom: -15px;
+    left: 11px;
+}
+.jp_slider_form_input input{
+	width:100%;
+	height:50px;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	border:transparent;
+	margin-top:60px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.jp_slider_form_input{
+	float:left;
+	width:100%;
+}
+.jp_slider_form_location_wrapper{
+	float:left;
+	width:100%;
+	position:relative;
+	margin-top:25px;
+}
+.jp_slider_form_location_wrapper select, .jp_form_exper_wrapper select{
+	width:100%;
+	height:50px;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	border:transparent;
+	padding-left:48px;
+	padding-right:20px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+.jp_slider_form_location_wrapper .second_icon, .jp_form_exper_wrapper .second_icon{
+	margin-left:-30px;
+	position: absolute;
+    top: 19px;
+}
+.jp_slider_form_location_wrapper .first_icon, .jp_form_exper_wrapper .first_icon{
+	position:absolute;
+	top:17px;
+	font-size:20px;
+	left:18px;
+	z-index:1;
+	color:#23c0e9;
+}
+.jp_slider_form_btn_wrapper{
+	float:left;
+	width:100%;
+	margin-top:25px;
+}
+.jp_slider_form_btn_wrapper li a{
+	float:left;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background:#23c0e9;
+	font-size:14px;
+	color:#ffffff;
+	text-transform:uppercase;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.jp_slider_form_btn_wrapper li a:hover{
+	background:#f36969;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
 .gc_header_wrapper{
     float: left;
     width: 100%;
@@ -108,34 +263,7 @@ ul{
 .jp_top_header_img_wrapper{
 	float:left;
 	width:100%;
-	height:100%;
-	border-top:3px solid #23c0e9;
-	position:relative;
-	background-color: hsla(200,40%,30%,.4);
-	background-image:		
-
-		url('../images/header/header_img.jpg'),
-		url('https://db.tt/vKBcgeOj');
-	background-repeat: repeat-x;
-	background-position: 
-		0 20%,
-		0 95%,
-		0 0,
-		0 100%,
-		0 0;
-
-	animation: 90s para infinite linear;
-}
-
-@keyframes para {
-	100% {
-		background-position: 
-			-5000px 20%,
-			-800px 95%,
-			500px 0,
-			1000px 100%,
-			400px 0;
-		}
+	background:#ffffff;
 }
 .gc_main_menu_wrapper{
 	float:left;
@@ -144,14 +272,6 @@ ul{
 	border-bottom: 1px solid #ffffff21;
 	position:relative;
 }		
-.jp_slide_img_overlay{
-	position:absolute;
-	top:0%;
-	right:0%;
-	left:0%;
-	bottom:0%;
-	background:#0e1427d4;
-}
 .menu-bar {
     cursor: pointer;
     position: relative;
@@ -206,13 +326,14 @@ ul{
     position: relative;
 }
 .gc_main_navigation{
-	color:#ffffff !important;
+	color:#000000 !important;
+	font-weight:600;
 }
 .mainmenu ul li:hover .gc_main_navigation,
 .mainmenu ul li.active > .gc_main_navigation {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	color:#ffffff !important;
+	color:#23c0e9 !important;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -603,12 +724,6 @@ ul{
     padding: 0px;
     width: 350px;
     display: inline-block;
-    border-radius: 0px;
-    -webkit-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1000;
 }
@@ -722,7 +837,7 @@ ul{
 	color:#ffffff;
 	border:1px solid #ffffff40;
 	text-align:center;
-	background:transparent;
+	background:#23c0e9;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
@@ -733,8 +848,9 @@ ul{
 	transition: all 0.5s;
 }
 .jp_navi_right_btn_wrapper li:first-child a:hover{
-	background:#f36969;
-	border:1px solid #f36969;
+	background:transparent;
+	border:1px solid #23c0e9;
+	color:#23c0e9;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -761,7 +877,8 @@ ul{
 }
 .jp_navi_right_btn_wrapper li:last-child a:hover{
 	background:transparent;
-	border:1px solid #ffffff40;
+	border:1px solid #f36969;
+	color:#f36969;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -795,7 +912,7 @@ ul{
 .jp_banner_heading_cont_wrapper{
 	float:left;
 	width:100%;
-	padding-top:0px;
+	padding-top:130px;
 }
 .jp_job_heading h1{
 	font-size:60px;
@@ -862,7 +979,7 @@ ul{
 	-webkit-border-radius:15px;
 	-moz-border-radius:15px;
 	border-radius:15px;
-	background:orange;
+	background:#23c0e9;
 	color:#ffffff;
 	line-height:50px;
 	text-align:center;
@@ -1756,7 +1873,7 @@ ul{
 	width:50%;
 	padding-top:85px;
 	padding-bottom:85px;
-	background:url('../images/content/register_bg.jpg') 50% 0 repeat-y;
+	background:url('../../turniket/templates/turniket/images/content/register_bg.jpg') 50% 0 repeat-y;
 	background-position":center 0;
 	background-size:cover;
 	background-repeat:no-repeat;

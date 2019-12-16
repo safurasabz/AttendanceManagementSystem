@@ -12,47 +12,59 @@
 <meta name="description" content="Laravel">
 <meta name="author" content="Laravel">
 
-<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="../../static/turniket/assets/plugins/bootstrap/css/bootstrap.min.css">
     
     
 <!--<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css">-->
     
 <!--    DATEPICKER-->
     
-    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"> 
+    <link rel="stylesheet" href="../../static/turniket/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
     
     <script src="stylesheet" href="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js">    </script>
     
 <!--    DATEPICKER-->
 
 <!-- Custom Css -->
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/theme1.css">
-<link rel="stylesheet" href="css/search_box.css">
+<link rel="stylesheet" href="../../static/turniket/assets/css/main.css">
+<link rel="stylesheet" href="../../static/turniket/assets/css/theme1.css">
+<link rel="stylesheet" href="../../static/css/search_box.css">
     
     
     
     
         <!--    Datepicker js and css starts-->
     
-   <script>
-         $(function() {
-            $( "#datepicker-5" ).datepicker({
-               beforeShowDay : function (date) {
-                  var dayOfWeek = date.getDay ();
-                  // 0 : Sunday, 1 : Monday, ...
-                  if (dayOfWeek == 0 || dayOfWeek == 6) return [false];
-                  else return [true];
-               }
-            });
-         });
-      </script>
+{#   <script>#}
+{#         $(function() {#}
+{#            $( "#datepicker-5" ).datepicker({#}
+{#               beforeShowDay : function (date) {#}
+{#                  var dayOfWeek = date.getDay ();#}
+{#                  // 0 : Sunday, 1 : Monday, ...#}
+{#                  if (dayOfWeek == 0 || dayOfWeek == 6) return [false];#}
+{#                  else return [true];#}
+{#               }#}
+{#            });#}
+{#         });#}
+{#      </script>#}
     <!--    Datepicker js and css ends-->
 
 </head>
 
 <body class="font-montserrat">
-    
+
+<form action="{% url "turniket:index" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file"
+                   title="Upload excel file"
+                   name="excel_file"
+                   style="border: 1px solid black; padding: 5px;"
+                   required="required">
+            <p>
+            <input type="submit"
+                   value="Upload"
+                   style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
+</form>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -181,42 +193,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><div class="font-15">Senan Kazimov</div></td>
-                                            <td>12/11/2019</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td><div class="font-15">Nigar Quliyeva</div></td>
-                                            <td>12/11/2019</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                            <td>13</td>
-                                         
-                                            
-                                        </tr>
-                                        
+                                            {% for row in excel_data %}
+                                                    <tr>
+                                                        <td><div class="font-15">raw.fullname</div></td>
+                                                        <td>raw.date</td>
+                                                        <td>09:00 - 18:00</td>
+                                                        <td>raw.came</td>
+                                                        <td>raw.gone</td>
+                                                        <td>raw.early_came</td>
+                                                        <td>raw.early_gone</td>
+                                                        <td>raw.late_came</td>
+                                                        <td>raw.late_gone</td>
+                                                        <td>raw.build_exit</td>
+                                                        <td>raw.distraction</td>
+                                                        <td>102</td>
+                                                        <td>raw.overall_ghour</td>
+                                                        <td>raw.overall_hour</td>
+                                                    </tr>
+                                                    <br>
+                                            {% endfor %}
                                     
                                     </tbody>
                                 </table>
@@ -447,13 +442,13 @@
     </div>
 
 <!-- Scripts -->
-<script src="assets/bundles/lib.vendor.bundle.js"></script>
+<script src="../../static/turniket/assets/bundles/lib.vendor.bundle.js"></script>
 
 
-<script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="../../static/turniket/assets/plugins/sweetalert/sweetalert.min.js"></script>
 
-<script src="assets/js/core.js"></script>
-<script src="assets/js/page/dialogs.js"></script>
+<script src="../../static/turniket/assets/js/core.js"></script>
+<script src="../../static/turniket/assets/js/page/dialogs.js"></script>
     
 
 </body>
