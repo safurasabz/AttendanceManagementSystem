@@ -4,505 +4,6 @@
     <list default="true" id="3f51b8e0-0175-44a2-b4c4-319e3a556d9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/flaticon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive_iv.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive_map.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive_v.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/responsive_vi.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/search_box.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style_II.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style_iv.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style_map.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style_v.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/css/style_vi.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/apexcharts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/apexcharts.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/c3.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/c3.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/counterup.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/counterup.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/fullcalendar.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/fullcalendar.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/jvectormap1.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/jvectormap1.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/knobjs.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/knobjs.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/lib.vendor.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/lib.vendor.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/nestable.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/nestable.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/summernote.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/summernote.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/bundles/sweetalert.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/bundles/sweetalert.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/css/theme1.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/css/theme1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/feather/feather-webfont6cfa.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/feather/feather-webfont6cfa.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/feather/feather-webfont6cfa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/feather/feather-webfont6cfa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/feather/feather-webfont6cfa.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/feather/feather-webfont6cfa.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/feather/feather-webfont6cfa.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/feather/feather-webfont6cfa.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfont3e6e.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/fontawesome-webfontd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/simple-Line-Icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/simple-Line-Icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/simple-Line-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/simple-Line-Icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/simple-Line-Icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/simple-Line-Icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/simple-Line-Icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/simple-Line-Icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/weathericons-regular-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/weathericons-regular-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/weathericons-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/weathericons-regular-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/weathericons-regular-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/weathericons-regular-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/weathericons-regular-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/fonts/weathericons-regular-webfontd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/fonts/weathericons-regular-webfontd41d.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/android-browser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/android-browser.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/aol-explorer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/aol-explorer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/blackberry.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/blackberry.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/camino.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/camino.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/chrome.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/chrome.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/chromium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/chromium.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/dolphin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/dolphin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/edge.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/edge.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/firefox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/firefox.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/ie.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/ie.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/maxthon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/maxthon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/mozilla.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/mozilla.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/netscape.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/netscape.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/opera.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/opera.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/safari.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/safari.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/sleipnir.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/sleipnir.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/uc-browser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/uc-browser.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/browsers/vivaldi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/browsers/vivaldi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/favicon.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/favicon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ad.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ad.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ae.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ae.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/af.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/af.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ag.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ai.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ai.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/al.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/al.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/am.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/am.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ao.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ao.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/aq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/aq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/as.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/as.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/at.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/at.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/au.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/au.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/aw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/aw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ax.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ax.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/az.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/az.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ba.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ba.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bd.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bd.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/be.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/be.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bj.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bj.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/br.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/br.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/by.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/by.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/bz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/bz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ca.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ca.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cd.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cd.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ch.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ci.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ci.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ck.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ck.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/co.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/co.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cx.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/cz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/cz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/de.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/de.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/dj.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/dj.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/dk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/dk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/dm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/dm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/do.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/do.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/dz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/dz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ec.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ec.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ee.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ee.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/eg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/eg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/eh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/eh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/er.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/er.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/es.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/es.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/et.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/et.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/eu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/eu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fj.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fj.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/fr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/fr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ga.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ga.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gb-eng.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gb-eng.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gb-nir.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gb-nir.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gb-sct.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gb-sct.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gb-wls.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gb-wls.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gd.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gd.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ge.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ge.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/gy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/gy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/hk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/hk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/hm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/hm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/hn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/hn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/hr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/hr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ht.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ht.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/hu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/hu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/id.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/id.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ie.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ie.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/il.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/il.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/im.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/im.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/in.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/io.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/io.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/iq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/iq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ir.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ir.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/is.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/is.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/it.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/it.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/je.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/je.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/jm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/jm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/jo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/jo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/jp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/jp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ke.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ki.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ki.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/km.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/km.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ky.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ky.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/kz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/kz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/la.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/la.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/li.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/li.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ls.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ls.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/lv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/lv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ly.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ly.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ma.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ma.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/md.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/md.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/me.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/me.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ml.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ml.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ms.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ms.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mx.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/my.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/my.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/mz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/mz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/na.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/na.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ne.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ne.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ng.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ng.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ni.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ni.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/no.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/no.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/np.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/np.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/nz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/nz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/om.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/om.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pe.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ph.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ph.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ps.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ps.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/pw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/pw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/py.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/py.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/qa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/qa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/re.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/re.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ro.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/rs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/rs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ru.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ru.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/rw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/rw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sd.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sd.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/se.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/se.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sh.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/si.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/si.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sj.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sj.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/so.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/so.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ss.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ss.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/st.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/st.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sx.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/sz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/sz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/td.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/td.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/th.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/th.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tj.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tj.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/to.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/to.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tv.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/tz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/tz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ua.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ua.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ug.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ug.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/um.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/um.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/un.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/un.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/us.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/us.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/uy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/uy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/uz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/uz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/va.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/va.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/vc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/vc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ve.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ve.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/vg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/vg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/vi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/vi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/vn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/vn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/vu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/vu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/wf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/wf.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ws.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ws.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/ye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/ye.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/yt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/yt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/za.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/za.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/zm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/zm.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/flags/zw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/flags/zw.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/gallery/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/gallery/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/2checkout-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/2checkout-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/2checkout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/2checkout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/alipay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/alipay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/alipay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/alipay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/amazon-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/amazon-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/amazon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/amazon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/americanexpress-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/americanexpress-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/americanexpress.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/americanexpress.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/applepay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/applepay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/applepay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/applepay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bancontact-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bancontact-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bancontact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bancontact.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bitcoin-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bitcoin-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bitcoin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bitcoin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bitpay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bitpay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/bitpay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/bitpay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/cirrus-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/cirrus-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/cirrus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/cirrus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/clickandbuy-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/clickandbuy-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/clickandbuy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/clickandbuy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/coinkite-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/coinkite-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/coinkite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/coinkite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/dinersclub-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/dinersclub-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/dinersclub.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/dinersclub.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/directdebit-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/directdebit-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/directdebit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/directdebit.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/discover-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/discover-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/discover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/discover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/dwolla-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/dwolla-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/dwolla.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/dwolla.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ebay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ebay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ebay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ebay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/eway-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/eway-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/eway.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/eway.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/giropay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/giropay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/giropay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/giropay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/googlewallet-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/googlewallet-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/googlewallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/googlewallet.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ingenico-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ingenico-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ingenico.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ingenico.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/jcb-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/jcb-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/jcb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/jcb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/klarna-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/klarna-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/klarna.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/klarna.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/laser-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/laser-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/laser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/laser.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/maestro-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/maestro-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/maestro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/maestro.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/mastercard-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/mastercard-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/mastercard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/mastercard.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/monero-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/monero-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/monero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/monero.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/neteller-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/neteller-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/neteller.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/neteller.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ogone-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ogone-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ogone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ogone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/okpay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/okpay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/okpay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/okpay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paybox-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paybox-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paybox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paybox.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paymill-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paymill-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paymill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paymill.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payone-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payone-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payoneer-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payoneer-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payoneer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payoneer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paypal-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paypal-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paypal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paypal.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paysafecard-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paysafecard-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/paysafecard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/paysafecard.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payu-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payu-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payza-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payza-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/payza.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/payza.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ripple-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ripple-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ripple.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ripple.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/sage-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/sage-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/sage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/sage.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/sepa-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/sepa-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/sepa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/sepa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/shopify-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/shopify-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/shopify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/shopify.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/skrill-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/skrill-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/skrill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/skrill.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/solo-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/solo-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/solo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/solo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/square-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/square-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/square.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/stripe-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/stripe-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/stripe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/stripe.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/switch-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/switch-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/switch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/switch.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ukash-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ukash-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/ukash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/ukash.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/unionpay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/unionpay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/unionpay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/unionpay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/verifone-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/verifone-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/verifone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/verifone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/verisign-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/verisign-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/verisign.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/verisign.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/visa-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/visa-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/visa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/visa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/webmoney-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/webmoney-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/webmoney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/webmoney.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/westernunion-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/westernunion-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/westernunion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/westernunion.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/worldpay-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/worldpay-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/payments/worldpay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/payments/worldpay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/slider1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/slider1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/slider2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/slider2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/slider3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/slider3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/sm/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/sm/avatar6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/we-released.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/we-released.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/images/xs/avatar9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/images/xs/avatar9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/chart/knobjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/chart/knobjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/form/dropify.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/form/dropify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/dialogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/job-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/job-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/project-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/project-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/sortable-nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/sortable-nestable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/summernote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/js/page/sweetalert.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/js/page/sweetalert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/bootstrap-multiselect/bootstrap-multiselect.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/bootstrap-multiselect/bootstrap-multiselect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/charts-c3/c3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/charts-c3/c3.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/css/dropify.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/css/dropify.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/fonts/dropify.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/fonts/dropify.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/fonts/dropify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/fonts/dropify.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/fonts/dropify.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/fonts/dropify.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/fonts/dropify.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/fonts/dropify.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/dropify/js/dropify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/dropify/js/dropify.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/fullcalendar/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/jvectormap/jvectormap-2.0.3.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/jvectormap/jvectormap-2.0.3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/nestable/jquery-nestable.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/nestable/jquery-nestable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/summernote/dist/font/summernoted41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/summernote/dist/font/summernoted41d.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/summernote/dist/font/summernotef534.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/summernote/dist/font/summernotef534.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/summernote/dist/font/summernotef534.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/summernote/dist/font/summernotef534.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/summernote/dist/font/summernotef534.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/summernote/dist/font/summernotef534.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/summernote/dist/summernote.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/summernote/dist/summernote.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/sweetalert/sweetalert.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/sweetalert/sweetalert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/assets/plugins/sweetalert/sweetalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/assets/plugins/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/departments.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/turniket/departments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/turniket/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/views.py" afterDir="false" />
     </list>
@@ -529,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/turniket/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-237">
-              <caret line="66" column="97" lean-forward="true" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
+            <state relative-caret-position="323">
+              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -558,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attnd/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="204">
               <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
               <folding>
                 <element signature="e#629#661#0" expanded="true" />
@@ -570,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/turniket/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="544">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -579,25 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/turniket/templates/turniket/departments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3434">
+            <state relative-caret-position="391">
               <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/turniket/templates/turniket/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="187" column="50" lean-forward="true" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1556">
+              <caret line="226" column="68" selection-start-line="226" selection-start-column="68" selection-end-line="226" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -623,6 +116,10 @@
       <find>fullname</find>
       <find>&gt;18</find>
       <find>br</find>
+      <find>table</find>
+      <find>difference</find>
+      <find>logdata</find>
+      <find>csrf</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -640,16 +137,16 @@
         <option value="$PROJECT_DIR$/turniket/models.py" />
         <option value="$PROJECT_DIR$/turniket/templates/turniket/departments.html" />
         <option value="$PROJECT_DIR$/turniket/templates/turniket/index2.html" />
-        <option value="$PROJECT_DIR$/turniket/views.py" />
         <option value="$PROJECT_DIR$/turniket/templates/turniket/index.html" />
+        <option value="$PROJECT_DIR$/turniket/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="202" />
-    <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="x" value="-135" />
+    <option name="y" value="-13" />
+    <option name="width" value="897" />
+    <option name="height" value="579" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -699,6 +196,15 @@
               <item name="turniket" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AttendanceManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AttendanceManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="turniket" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="turniket" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -796,17 +302,19 @@
       <workItem from="1576044081425" duration="21135000" />
       <workItem from="1576155710713" duration="585000" />
       <workItem from="1576166114719" duration="20817000" />
-      <workItem from="1576303887461" duration="12986000" />
+      <workItem from="1576303887461" duration="19354000" />
+      <workItem from="1576507720868" duration="4808000" />
+      <workItem from="1576559548811" duration="8371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96237000" />
+    <option name="totallyTimeSpent" value="115784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21746032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06904762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -821,7 +329,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.50384027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.14592934" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -847,26 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attnd/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attnd/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attnd/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="e#629#661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/turniket/templates/turniket/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -884,41 +372,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/attnd/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attnd/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attnd/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#629#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/turniket/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="544">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/turniket/templates/turniket/departments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3434">
+        <state relative-caret-position="391">
           <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/turniket/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="66" column="97" lean-forward="true" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/turniket/templates/turniket/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="187" column="50" lean-forward="true" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
+        <state relative-caret-position="1556">
+          <caret line="226" column="68" selection-start-line="226" selection-start-column="68" selection-end-line="226" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/turniket/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

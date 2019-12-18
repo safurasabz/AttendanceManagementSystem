@@ -1,4 +1,5 @@
 {% load static %}
+{% csrf_token %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,6 +52,15 @@
     {#         });#}
     {#      </script>#}
     <!--    Datepicker js and css ends-->
+    <style>
+        .tableFixHead          { overflow-y: auto; height: 500px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+    </style>
 
 </head>
 
@@ -181,6 +191,7 @@
 
                     <div class="card-body">
                         <div class="table-responsive">
+                        <div class="tableFixHead">
                             <table class="table table-striped table-vcenter table-hover mb-0 text-nowrap">
                                 <thead>
                                 <tr>
@@ -195,29 +206,12 @@
                                     <th>Gec çıxış</th>
                                     <th>Binadan çıxış</th>
                                     <th>İşdən yayınma</th>
-                                    <th>İcazə saatı</th>
+                                   <!-- <th>İcazə saatı</th> -->
                                     <th>Qrafik daxili iş saatı</th>
                                     <th>Ümumi iş saatı</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                            <td><div class="font-15">Senan Kazimov</div></td>
-                                            <td>12/11/2019</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-                                            <td>102</td>
-
-                                </tr>
                                 {% for row in excel_data %}
                                     <tr>
                                         <td>
@@ -233,7 +227,7 @@
                                         <td>{{ row.late_gone }}</td>
                                         <td>{{ row.build_exit }}</td>
                                         <td>{{ row.distraction }}</td>
-                                        <td>102</td>
+                                      <!--  <td>102</td>-->
                                         <td>{{ row.overall_ghour }}</td>
                                         <td>{{ row.overall_hour }}</td>
                                     </tr>
@@ -242,6 +236,7 @@
 
                                 </tbody>
                             </table>
+                        </div>
                         </div>
                     </div>
                 </div>
