@@ -5,13 +5,13 @@ from django.utils import timezone
 
 # Create your views here.
 
+app_name = "turniket"
+
+def filter(request):
+    return render(request, 'turniket/index2.html', {})
 
 def index(request):
     i1 = 0
-    i2 = 0
-    i3 = 0
-    i4 = 0
-    i5 = 0
     if "GET" == request.method:
         return render(request, 'turniket/index.html', {})
     else:
@@ -74,11 +74,12 @@ def index(request):
                 if len(hours) > 0 and actions[0] == "вход" and hours[0] != "":
                     logcame = hours[0]
                     hours.remove(logcame)
-                    actions.remove(actions[0])
-                    if logcame[:2] != "" and int(logcame[:2]) < 9:
+                    print(actions[0])
+                    del actions[0]
+                    if logcame[:2] != "" and int(logcame[:2]) < 9 and logcame!=noway:
                         logearly_came = convertTimeToStr(difference('09:00:00', logcame))
                         loglate_came = 0
-                    elif logcame[:2] != "" and int(logcame[:2]) >= 9:
+                    elif logcame[:2] != "" and int(logcame[:2]) >= 9 and logcame!=noway:
                         logearly_came = 0
                         loglate_came = convertTimeToStr(difference(logcame, '09:00:00'))
                 else:
@@ -92,11 +93,11 @@ def index(request):
                 if len(hours) > 0 and actions[len(hours)-1] == "выход" and hours[-1] != "":
                     loggone = hours[len(hours)-1]
                     hours.remove(loggone)
-                    actions.remove(actions[-1])
-                    if loggone[6:] != "" and int(loggone[:2]) >= 18:
+                    del actions[len(actions)-1]
+                    if loggone[:2] != "" and int(loggone[:2]) >= 18 and loggone!=noway:
                         loglate_gone = convertTimeToStr(difference(loggone, '18:00:00'))
                         logearly_gone = "0"
-                    elif logcame[6:] != "" and int(logcame[:2]) < 18:
+                    elif loggone[:2] != "" and int(loggone[:2]) < 18 and loggone!=noway:
                         logearly_gone = convertTimeToStr(difference('18:00:00', loggone))
                         loglate_gone = "0"
                 else:
@@ -120,14 +121,38 @@ def index(request):
                 distractionstr = ""
                 for j in range(len(hours) - 1):
                     if actbin[j] == 1 and actbin[j + 1] == 0:
-                        distractiondec = distractiondec + difference(hours[j + 1], hours[j])
+                        if int(hours[j][:2])<13:
+                            left = hours[j]
+                        elif int(hours[j][:2])>=14:
+                            left = hours[j]
+                        else:
+                            left = '14:00:00'
+
+                        if int(hours[j+1][:2])< 13:
+                            entr = hours[j+1]
+                        elif int(hours[j+1][:2])>=14:
+                            entr = hours[j+1]
+                        else:
+                            entr = '13:00:00'
+                        print("entrleftbefor", entr, left)
+                        if int(entr[:2])>int(left[:2]):
+                            print("entrleft", entr, left)
+                            distractiondec = distractiondec + difference(entr, left)
                 distractionstr = convertTimeToStr(distractiondec)
 
                 if loggone != noway and logcame != noway:
+                    if int(loggone[:2]) >=18:
+                        last =  "18:00:00"
+                    else:
+                        last = loggone
+                    if int(logcame[:2]) < 9:
+                        first = "09:00:00"
+                    else:
+                        first = logcame
                     logoverall = convertTimeToStr(
                         difference(loggone, logcame) - distractiondec - difference('14:00:00', '13:00:00'))
                     logoverallg = convertTimeToStr(
-                        difference('18:00:00', '09:00:00') - distractiondec - difference('14:00:00', '13:00:00'))
+                        difference(last, first) - distractiondec - difference('14:00:00', '13:00:00'))
                 print(logdate, logfullname, logcame, loggone,
                       logearly_came, loglate_came, logearly_gone, loglate_gone, logbuild_exit,distractionstr,
                       distractiondec, logoverall, logoverallg)
@@ -150,6 +175,20 @@ def index(request):
         return render(request, 'turniket/index.html', {"excel_data": Log.objects.all()})
 
 
+
+
+def addperm(request):
+    if request.method == "GET":
+        return render(request, 'turniket/index2.html')
+
+def addshortday(request):
+    if request.method == "GET":
+        return render(request, 'turniket/index2.html')
+
+def exportreport(request):
+    if request.method == "GET":
+        return render(request, 'turniket/index2.html')
+
 def difference(hour1, hour2):
     if hour1 != " " and hour2 != " ":
         print(hour1, hour2)
@@ -164,7 +203,6 @@ def difference(hour1, hour2):
         return time1 - time2
     else:
         return 0
-
 
 def convertTimeToStr(time):
     if time != 0:

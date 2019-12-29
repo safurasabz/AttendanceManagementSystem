@@ -97,18 +97,18 @@ th     { background:#eee; }
 
 
                 <div class="header-action">
-
-
+                    {% csrf_token %}
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
                         Hesabat
                     </button>
 
 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i
-                            class="fe fe-plus mr-2"></i>İcazə əlavə et
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fe fe-plus mr-2"></i>İcazə əlavə et
                     </button>
 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"><i
+
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"><i
                             class="fe fe-plus mr-2"></i>Qısa iş günü əlavə et
                     </button>
 
@@ -122,12 +122,11 @@ th     { background:#eee; }
 
                     <div class="input-group">
                         <input class="input--style-1" type="text" name="origin" placeholder="Tarix">
-
                     </div>
 
 
                     <div class="p-t-5">
-                        <label class="checkbox-container m-r-45">Gecikmə Tarixləri
+                        <label class="checkbox-container m-r-45">Gecikməler
                             <input type="checkbox" name="first-class">
                             <span class="checkmark"></span>
                         </label>
@@ -375,6 +374,9 @@ th     { background:#eee; }
 </div>
 
 <!-- Modal -->
+
+<form action="#" method="post">
+    {% csrf_token %}
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -386,43 +388,43 @@ th     { background:#eee; }
             </div>
             <div class="modal-body">
                 <div class="row clearfix">
+
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Ad Soyad">
+                            <input type="text" name="staffname" class="form-control" placeholder="Ad Soyad">
                         </div>
                     </div>
 
-
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="datepicker-5" placeholder="Tarix 1">
+                            <input type="text" name="date" class="form-control" id="datepicker-5" placeholder="Tarix: 'GG:AA:İİ'">
                         </div>
                     </div>
 
-
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Tarix 2">
+                            <input type="text" name="hour1" class="form-control" placeholder="Başlanğıc saat(24 saat formatı, məs: 12:45) ">
                         </div>
                     </div>
 
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="hour2" class="form-control" placeholder="Geri dönüş saatı(24 saat formatı, məs: 14:45) ">
+                        </div>
+                    </div>
 
                     <div class="col-md-12">
                         <div class="form-group">
-                            <select class="form-control" placeholder="Səbəb">
+                            <select name="reason" class="form-control" placeholder="Səbəb">
                                 <option>İş səbəbi ilə</option>
                                 <option>Şəxsi</option>
-                                <option>Məzuniyyət</option>
-                                <option>Ezamiyyət</option>
-
                             </select>
                         </div>
                     </div>
 
-
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Qısa qeyd">
+                            <input type="text" name="note" class="form-control" placeholder="Qısa qeyd">
                         </div>
                     </div>
 
@@ -431,13 +433,12 @@ th     { background:#eee; }
 
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
-                <button type="button" class="btn btn-primary">Yadda saxla</button>
+                <input type="submit" value="Yadda saxla" class="btn btn-primary"></input>
             </div>
         </div>
     </div>
 </div>
-
+</form>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
