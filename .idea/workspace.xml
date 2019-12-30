@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f51b8e0-0175-44a2-b4c4-319e3a556d9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/static/turniket/css/search_box.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/css/search_box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/Flaticon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/Flaticon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/Flaticon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/Flaticon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/Flaticon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/Flaticon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/Flaticond41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/Flaticond41d.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfont3e6e.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/fontawesome-webfontd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/fonts/glyphicons-halflings-regulard41d.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/turniket/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/turniket/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/urls.py" afterDir="false" />
@@ -16,8 +33,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AttendanceManagementSystem" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,14 +81,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Safura\attnd\turniket" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem\turniket\templates" />
+      <recent name="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem\turniket\static\turniket" />
       <recent name="C:\Users\Safura\AttendanceManagementSystem\turniket" />
       <recent name="C:\Users\Safura\AttendanceManagementSystem\static" />
       <recent name="C:\Users\Safura\AttendanceManagementSystem\static\turniket" />
-      <recent name="C:\Users\Safura\attnd\turniket\templates\turniket" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Safura\attnd\turniket" />
     </key>
   </component>
   <component name="RunManager">
@@ -94,6 +129,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -120,7 +156,7 @@
       <workItem from="1577532879745" duration="374000" />
       <workItem from="1577533357442" duration="2839000" />
       <workItem from="1577536585029" duration="6521000" />
-      <workItem from="1577597369094" duration="11075000" />
+      <workItem from="1577597369094" duration="55352000" />
     </task>
     <servers />
   </component>
@@ -137,9 +173,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1577605594610" />
-    <state x="346" y="89" key="search.everywhere.popup" timestamp="1577600260838">
+    <state x="346" y="89" key="search.everywhere.popup" timestamp="1577694585226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1577600260838" />
+    <state x="346" y="89" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1577694585226" />
   </component>
 </project>

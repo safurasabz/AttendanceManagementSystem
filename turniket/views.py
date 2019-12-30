@@ -1,19 +1,29 @@
 from django.shortcuts import render
 import openpyxl, re
-from turniket.models import Excel, Staff, Log
+from turniket.models import Excel, Staff, Log, Permissions
 from django.utils import timezone
+from django.views.decorators.csrf import csrf_exempt
+from django.db.models import Count, F, Value
 
 # Create your views here.
 
 app_name = "turniket"
 
-def filter(request):
-    return render(request, 'turniket/index2.html', {})
+def addperm(request):
+    data = request.POST.copy()
+    ddd = str(data["date"])
+    perm = Permissions(name=data["staffname"], date=data["date"], hour1=data["hour1"]+":00", hour2=data["hour2"]+":00",
+                       reason=data["reason"], note =data["note"])
+    perm.save()
+    print("saved")
+    return render(request, 'turniket/index.html', {"data": data})
+
 
 def index(request):
     i1 = 0
+    staff = Staff.objects.all()
     if "GET" == request.method:
-        return render(request, 'turniket/index.html', {})
+        return render(request, 'turniket/index.html', {"names": Staff.objects.all()})
     else:
         excel_file = request.FILES["excel_file"]
 
@@ -78,14 +88,16 @@ def index(request):
                     del actions[0]
                     if logcame[:2] != "" and int(logcame[:2]) < 9 and logcame!=noway:
                         logearly_came = convertTimeToStr(difference('09:00:00', logcame))
-                        loglate_came = 0
+                        loglate_came = "0"
                     elif logcame[:2] != "" and int(logcame[:2]) >= 9 and logcame!=noway:
-                        logearly_came = 0
+                        logearly_came = "0"
                         loglate_came = convertTimeToStr(difference(logcame, '09:00:00'))
                 else:
                     logcame = noway
                     loglate_came = noway
                     logearly_came = noway
+                    logoveralldec = 0
+                    logoverallgdec = 0
                     logoverall = noway
                     logoverallg = noway
 
@@ -105,6 +117,8 @@ def index(request):
                     logearly_gone = noway
                     loglate_gone = noway
                     logoverall = noway
+                    logoveralldec = 0
+                    logoverallgdec = 0
                     logoverallg = noway
                 print(logfullname)
                 print(hours)
@@ -138,7 +152,7 @@ def index(request):
                         if int(entr[:2])>int(left[:2]):
                             print("entrleft", entr, left)
                             distractiondec = distractiondec + difference(entr, left)
-                distractionstr = convertTimeToStr(distractiondec)
+
 
                 if loggone != noway and logcame != noway:
                     if int(loggone[:2]) >=18:
@@ -149,13 +163,43 @@ def index(request):
                         first = "09:00:00"
                     else:
                         first = logcame
+                    if int(loggone[:2])<=13:
+                        gonebefbr =  0
+                    else:
+                        gonebefbr = difference('14:00:00', '13:00:00')
                     logoverall = convertTimeToStr(
-                        difference(loggone, logcame) - distractiondec - difference('14:00:00', '13:00:00'))
+                        difference(loggone, logcame) - distractiondec - gonebefbr)
                     logoverallg = convertTimeToStr(
-                        difference(last, first) - distractiondec - difference('14:00:00', '13:00:00'))
+                        difference(last, first) - distractiondec - gonebefbr)
+
+                if len(Permissions.objects.filter(name=data['name'], date=logdate))>0:
+                    permission = Permissions.objects.filter(name=data['name'], date=logdate)
+                    for perm in permission:
+                        print(perm.hour1, type(perm.hour1))
+                        if int(perm.hour1[:2]) <= 13 <= int(perm.hour2[:2]):
+                            nondist = difference(perm.hour2, perm.hour1) - difference('14:00:00', '13:00:00')
+                            distractiondec = distractiondec - nondist
+                            logbuild_exit = logbuild_exit - 1
+                logoveralldec = convertStrToSec(logoverall)
+                logoverallgdec = convertStrToSec(logoverallg)
+                distractionstr = convertTimeToStr(distractiondec)
+                if convertStrToSec(loglate_came)>0:
+                    loglate_camebin = 1
+                else:
+                    loglate_camebin=0
                 print(logdate, logfullname, logcame, loggone,
                       logearly_came, loglate_came, logearly_gone, loglate_gone, logbuild_exit,distractionstr,
                       distractiondec, logoverall, logoverallg)
+
+                #whether the employee has permission for current date
+                p = Permissions.objects.filter(name=data['name'], date=date)
+                if  len(p)>0:
+                    for perm in p:
+                        logpermission = str(perm.hour1)[:5] + "-" + str(perm.hour2)[:5]
+                        logpermissionreason = perm.reason + " not:" + perm.note
+                else:
+                    logpermission = "-"
+                    logpermissionreason = "-"
 
                 logdata = Log(
                     date=logdate,
@@ -164,30 +208,104 @@ def index(request):
                     gone=loggone,
                     early_came=logearly_came,
                     late_came=loglate_came,
+                    late_camebin = loglate_camebin,
                     early_gone=logearly_gone,
                     late_gone=loglate_gone,
                     build_exit=logbuild_exit,
                     distraction=distractionstr,
+                    overall_hourdec = logoveralldec,
+                    overall_ghourdec = logoverallgdec,
                     overall_ghour=logoverallg,
-                    overall_hour=logoverall)
+                    overall_hour=logoverall,
+                    permission=logpermission,
+                    permissionreason=logpermissionreason)
+
                 logdata.save()
 
-        return render(request, 'turniket/index.html', {"excel_data": Log.objects.all()})
+        return render(request, 'turniket/index.html', {"excel_data": Log.objects.all(), "names": staff})
 
 
 
 
-def addperm(request):
-    if request.method == "GET":
-        return render(request, 'turniket/index2.html')
+
+def filter(request):
+    data = request.POST.copy()
+    ddd = str(data["date"])
+    keys = data.keys()
+    for temp in Log.objects.filter(fullname=data['fullname'], date=str(data["date"])):
+        if temp.overall_ghour!="0" and temp.overall_hour!="0":
+            graphichour = convertStrToSec(temp.overall_ghour)
+            totalhour = convertStrToSec(temp.overall_hour)
+        else:
+            graphichour = convertStrToSec("0 s 0 deq 0 san")
+            totalhour = convertStrToSec("0 s 0 deq 0 san")
+        late = convertStrToSec(temp.late_came)
+
+    if data['fullname']!= '':
+        if data['date']!='':
+            if 'overtime' in keys:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]),
+                                                    overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]),
+                                                    overall_hourdec__gt=F("overall_ghourdec"))
+            else:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]), late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]))
+        else:
+            if 'overtime' in keys:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], overall_hourdec__gt=F("overall_ghourdec") )
+            else:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(fullname=data['fullname'], late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(fullname=data['fullname'] )
+    else:
+        if data['date'] != '':
+            if 'overtime' in keys:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(date=data['date'], overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(date=data['date'], overall_hourdec__gt=F("overall_ghourdec") )
+            else:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(date=data['date'], late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(date=data['date'])
+        else:
+            if 'overtime' in keys:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
+                else:
+                    excel_file = Log.objects.filter(overall_hourdec__gt=F("overall_ghourdec") )
+            else:
+                if 'belate' in keys:
+                    excel_file = Log.objects.filter(late_camebin__gt=0)
+                else:
+                    excel_file = Log.objects.all()
+    return render(request, 'turniket/index.html', {"excel_data": excel_file, "names": Staff.objects.all()})
+
+
+# def filter(request):
+#     if request.method == "GET":
+#         return render(request, 'turniket/index.html')
+#     return render(request, 'turniket/index2.html')
 
 def addshortday(request):
     if request.method == "GET":
-        return render(request, 'turniket/index2.html')
+        return render(request, 'turniket/index.html')
+    return render(request, 'turniket/index2.html')
 
 def exportreport(request):
     if request.method == "GET":
-        return render(request, 'turniket/index2.html')
+        return render(request, 'turniket/index.html')
+    return render(request, 'turniket/index2.html')
 
 def difference(hour1, hour2):
     if hour1 != " " and hour2 != " ":
@@ -207,7 +325,7 @@ def difference(hour1, hour2):
 def convertTimeToStr(time):
     if time != 0:
         h = time//3600
-        res = str(h) + "s "
+        res = str(h) + " s "
         m = (time - (time//3600)*3600)//60
         res = res + str(m) + " dəq "
         s = time - h*3600 - m*60
@@ -215,6 +333,19 @@ def convertTimeToStr(time):
         return res
     else:
         return "0"
+
+def convertStrToSec(timeline):
+    print(timeline)
+    templist = timeline.split()
+    if len(templist)>=5:
+        print(templist)
+        h = int(templist[0])
+        m = int(templist[2])
+        s = int(templist[4])
+        decimaltime = h*3600 + m*60 + s
+        return decimaltime
+    else:
+        return 0
 
 
 

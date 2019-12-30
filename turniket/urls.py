@@ -5,7 +5,8 @@ app_name = "turniket"
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', views.filter, name='filter'),
-    path('', views.addperm, name='addperm'),
-    path('', views.exportreport, name='exportreport'),
+    path('filter/', views.filter, name='filter'),
+    path('addperm/', views.addperm, name='addperm'),
+    path('exportreport/', views.exportreport, name='exportreport'),
+    path('addshortday/', views.addshortday, name='addshortday'),
 ]

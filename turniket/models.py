@@ -29,16 +29,33 @@ class Log(models.Model):
     gone = models.CharField(max_length=20)
     early_came = models.CharField(max_length=20)
     late_came = models.CharField(max_length=20)
+    late_camebin = models.IntegerField(null=True)
     early_gone = models.CharField(max_length=20)
     late_gone = models.CharField(max_length=20)
-    build_exit = models.IntegerField()
+    build_exit = models.IntegerField(null=True)
     distraction = models.CharField(max_length=20)
+    overall_ghourdec = models.IntegerField(null=True)
+    overall_hourdec = models.IntegerField(null=True)
     overall_ghour = models.CharField(max_length=20)
     overall_hour = models.CharField(max_length=20)
+    permission = models.CharField(max_length=20, null=True)
+    permissionreason = models.CharField(max_length=20, null=True)
     # staff_id = models.IntegerField()
     # graph = models.IntegerField()
 
     def __str__(self):
         return self.fullname
+
+class Permissions(models.Model):
+    name = models.CharField(max_length=20)
+    date = models.CharField(max_length=20)
+    hour1 = models.CharField(max_length=20)
+    hour2 = models.CharField(max_length=20)
+    reason = models.CharField(max_length=20)
+    note = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
+
 
 

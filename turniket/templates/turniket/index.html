@@ -66,19 +66,29 @@ th     { background:#eee; }
 
 <body class="font-montserrat">
 
+{#<form action="{% url "turniket:index" %}" method="post" enctype="multipart/form-data">#}
+{#    <input type="file" name="myFile"><br><br>#}
+{##}
+{#    <input type="submit" value = "Excel yukle" class="btn btn-light"></input>#}
+{#</form>#}
+
 <form action="{% url "turniket:index" %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file"
            title="Upload excel file"
            name="excel_file"
-           style="border: 1px solid black; padding: 5px;"
+           value="Excel fayli add"
+           style="padding: 5px;"
            required="required">
-    <p>
+    <br><br>
+
         <input type="submit"
                value="Upload"
-               style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
+               style="width: 100px; border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
 </form>
 <!-- Page Loader -->
+
+
 <div class="page-loader-wrapper">
     <div class="loader">
     </div>
@@ -88,45 +98,54 @@ th     { background:#eee; }
 <!--Search body starts-->
 
 <div class="wrapper wrapper--w680">
-
     <div class="card card-1">
-
         <div class="tab-content">
-
             <div class="tab-pane active" id="tab1">
-
-
                 <div class="header-action">
                     {% csrf_token %}
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
                         Hesabat
                     </button>
 
-
                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         <i class="fe fe-plus mr-2"></i>İcazə əlavə et
                     </button>
 
-
                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"><i
                             class="fe fe-plus mr-2"></i>Qısa iş günü əlavə et
                     </button>
-
                 </div>
-
-                <form method="POST" action="#">
+                <form method="POST" action="{% url 'turniket:filter' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
                     <div class="input-group">
-                        <input class="input--style-1" type="text" name="origin" placeholder="Ad soyad">
-
+                        <input class="input--style-1" name="fullname" type="text" placeholder="Ad soyad">
                     </div>
+{#                  <div class="col-md-12">#}
+{#                        <div class="input-group">#}
+{#                            <select name="fullname" class="input--style-1" placeholder="Səbəb">#}
+{#                                <option>İşçini seçin</option>#}
+{#                                {% for name in names %}#}
+{#                                    <option>{{name.name}}</option>#}
+{#                                {% endfor %}#}
+{#                            </select>#}
+{#                        </div>#}
+{#                   </div>#}
+
+{#                    <div class="input-group">#}
+{#                            <select name="fullname" class="input--style-1">#}
+{#                                <option>İşçini seçin</option>#}
+{#                                {% for name in names %}#}
+{#                                    <option>{{name.name}}</option>#}
+{#                                {% endfor %}#}
+{#                            </select>#}
+{#                    </div>#}
 
                     <div class="input-group">
-                        <input class="input--style-1" type="text" name="origin" placeholder="Tarix">
+                        <input class="input--style-1" name="date" type="date" placeholder="Tarix">
                     </div>
-
 
                     <div class="p-t-5">
-                        <label class="checkbox-container m-r-45">Gecikməler
+                        <label class="checkbox-container m-r-45">Gecikmələr
                             <input type="checkbox" name="first-class">
                             <span class="checkmark"></span>
                         </label>
@@ -134,8 +153,8 @@ th     { background:#eee; }
                             <input type="checkbox" name="business">
                             <span class="checkmark"></span>
                         </label>
-
                     </div>
+
                     <button class="btn-submit" type="submit">Axtar</button>
                 </form>
             </div>
@@ -150,32 +169,25 @@ th     { background:#eee; }
         <div class="page-header">
             <div class="left">
                 <h1 class="page-title">Turniket</h1>
-
             </div>
             <div class="right">
-
                 <div class="notification d-flex">
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="section-body">
     <div class="container-fluid">
         <div class="d-flex justify-content-between align-items-center">
             <ul class="nav nav-tabs page-header-tab">
                 <li class="nav-item"><a class="nav-link active" id="Departments-tab" data-toggle="tab"
                                         href="#Departments-list">İşçilər</a></li>
-
-
             </ul>
-
         </div>
     </div>
 </div>
-
 
 <div class="section-body mt-3">
     <div class="container-fluid">
@@ -184,9 +196,7 @@ th     { background:#eee; }
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title"></h3>
-
                     </div>
-
 
                     <div class="card-body">
                         <div class="table-responsive">
@@ -205,9 +215,10 @@ th     { background:#eee; }
                                     <th>Gec çıxış</th>
                                     <th>Binadan çıxış</th>
                                     <th>İşdən yayınma</th>
-                                   <!-- <th>İcazə saatı</th> -->
                                     <th>Qrafik daxili iş saatı</th>
                                     <th>Ümumi iş saatı</th>
+                                    <th>İcazə saatı</th>
+                                    <th>İcazə səbəbi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -226,11 +237,11 @@ th     { background:#eee; }
                                         <td>{{ row.late_gone }}</td>
                                         <td>{{ row.build_exit }}</td>
                                         <td>{{ row.distraction }}</td>
-                                      <!--  <td>102</td>-->
                                         <td>{{ row.overall_ghour }}</td>
                                         <td>{{ row.overall_hour }}</td>
+                                        <td>{{ row.permission }}</td>
+                                        <td>{{ row.permissionreason }}</td>
                                     </tr>
-
                                 {% endfor %}
 
                                 </tbody>
@@ -342,7 +353,6 @@ th     { background:#eee; }
                             <span class="checkmark"></span>
                         </label>
 
-
                         <label class="checkbox-container m-r-45">İş qrafiki
                             <input type="checkbox" name="business">
                             <span class="checkmark"></span>
@@ -353,18 +363,13 @@ th     { background:#eee; }
                             <span class="checkmark"></span>
                         </label>
 
-
                         <label class="checkbox-container m-r-45">İşdən gec getmə
                             <input type="checkbox" name="business">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-
-
                 </div>
             </div>
-
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
                 <button type="button" class="btn btn-primary">Yadda saxla</button>
@@ -374,8 +379,8 @@ th     { background:#eee; }
 </div>
 
 <!-- Modal -->
-
-<form action="#" method="post">
+`
+<form action="{% url 'turniket:addperm' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -391,15 +396,26 @@ th     { background:#eee; }
 
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" name="staffname" class="form-control" placeholder="Ad Soyad">
+                            <select name="staffname" class="form-control" placeholder="Səbəb">
+                                <option>İşçini seçin</option>
+                                {% for name in names %}
+                                    <option>{{name.name}}</option>
+                                {% endfor %}
+                            </select>
                         </div>
                     </div>
 
                     <div class="col-md-12">
-                        <div class="form-group">
-                            <input type="text" name="date" class="form-control" id="datepicker-5" placeholder="Tarix: 'GG:AA:İİ'">
-                        </div>
+                            <div class="form-group">
+                                <input type="date" name="date" class="form-control" id="datepicker-5" placeholder="Tarix">
+
+                            </div>
                     </div>
+{#                    <div class="col-md-12">#}
+{#                        <div class="form-group">#}
+{#                            <input type="text" name="date" class="form-control" id="datepicker-5" placeholder="Tarix: 'İİİİ-AA-GG'">#}
+{#                        </div>#}
+{#                    </div>#}
 
                     <div class="col-md-12">
                         <div class="form-group">
