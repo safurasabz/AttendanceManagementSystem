@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4650c8b3-ce02-4238-b565-8385c99fe53f" name="dfdfdfdf" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

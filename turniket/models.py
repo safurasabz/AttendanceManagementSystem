@@ -24,6 +24,7 @@ class Staff(models.Model):
 
 class Log(models.Model):
     fullname = models.CharField(max_length=30)
+    graph = models.CharField(max_length=30, null=True)
     date = models.CharField(max_length=20)
     came = models.CharField(max_length=20)
     gone = models.CharField(max_length=20)
@@ -56,6 +57,14 @@ class Permissions(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Shortday(models.Model):
+    date = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.date
+
 
 
 

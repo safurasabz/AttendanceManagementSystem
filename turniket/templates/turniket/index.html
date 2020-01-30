@@ -83,7 +83,7 @@ th     { background:#eee; }
     <br><br>
 
         <input type="submit"
-               value="Upload"
+               value="Yüklə"
                style="width: 100px; border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
 </form>
 <!-- Page Loader -->
@@ -146,11 +146,11 @@ th     { background:#eee; }
 
                     <div class="p-t-5">
                         <label class="checkbox-container m-r-45">Gecikmələr
-                            <input type="checkbox" name="first-class">
+                            <input type="checkbox" name="belate">
                             <span class="checkmark"></span>
                         </label>
                         <label class="checkbox-container m-r-45">Əlavə İş
-                            <input type="checkbox" name="business">
+                            <input type="checkbox" name="overtime">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -228,7 +228,7 @@ th     { background:#eee; }
                                             <div class="font-15">{{ row.fullname }}</div>
                                         </td>
                                         <td>{{ row.date }}</td>
-                                        <td>09:00 - 18:00</td>
+                                        <td>{{row.graph}}</td>
                                         <td>{{ row.came }}</td>
                                         <td>{{ row.gone }}</td>
                                         <td>{{ row.early_came }}</td>
@@ -280,99 +280,100 @@ th     { background:#eee; }
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <div class="row clearfix">
-
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <select class="form-control" placeholder="Şöbə">
-                                <option>Şöbə DBdan select</option>
-                                <option>İnformasiya texnologiyaları</option>
-                                <option>HR</option>
-                                <option>Maliyyə</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="datepicker-5" placeholder="Ad Soyad">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="datepicker-5" placeholder="Başlanğıc tarix">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Son tarix">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-12">
-
-                        <label class="checkbox-container m-r-45">İşdən yayınmalar
-                            <input type="checkbox" name="first-class">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">İcazə saatları və səbəblər
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">Gecikmələr
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">Ümumi iş fəaliyyəti
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">Qrafik daxili iş fəaliyyəti
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">İşdən gec çıxma
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">Binadan çıxış sayı
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">İş qrafiki
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">İşə tez gəlmə
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="checkbox-container m-r-45">İşdən gec getmə
-                            <input type="checkbox" name="business">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
+{#            <div class="modal-body">#}
+{#                <div class="row clearfix">#}
+{##}
+{#                    <div class="col-md-12">#}
+{#                        <div class="form-group">#}
+{#                            <select class="form-control" placeholder="Şöbə">#}
+{#                                <option>Şöbə DBdan select</option>#}
+{#                                <option>İnformasiya texnologiyaları</option>#}
+{#                                <option>HR</option>#}
+{#                                <option>Maliyyə</option>#}
+{##}
+{#                            </select>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-md-12">#}
+{#                        <div class="form-group">#}
+{#                            <input type="text" class="form-control" id="datepicker-5" placeholder="Ad Soyad">#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{##}
+{#                    <div class="col-md-12">#}
+{#                        <div class="form-group">#}
+{#                            <input type="text" class="form-control" id="datepicker-5" placeholder="Başlanğıc tarix">#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{##}
+{#                    <div class="col-md-12">#}
+{#                        <div class="form-group">#}
+{#                            <input type="text" class="form-control" placeholder="Son tarix">#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{##}
+{#                    <div class="col-md-12">#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İşdən yayınmalar#}
+{#                            <input type="checkbox" name="first-class">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İcazə saatları və səbəblər#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">Gecikmələr#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">Ümumi iş fəaliyyəti#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">Qrafik daxili iş fəaliyyəti#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İşdən gec çıxma#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">Binadan çıxış sayı#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İş qrafiki#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İşə tez gəlmə#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{##}
+{#                        <label class="checkbox-container m-r-45">İşdən gec getmə#}
+{#                            <input type="checkbox" name="business">#}
+{#                            <span class="checkmark"></span>#}
+{#                        </label>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
-                <button type="button" class="btn btn-primary">Yadda saxla</button>
+
+                <form action = '{% url 'turniket:exportreport' %}'> <button type="submit" class="btn btn-primary">Çıxarış</button> </form>
             </div>
         </div>
     </div>
@@ -461,27 +462,30 @@ th     { background:#eee; }
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+            <form action="{% url 'turniket:addshortday' %}"  method="post">
+                {% csrf_token %}
+
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Qısa iş günü</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
             <div class="modal-body">
                 <div class="row clearfix">
-
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="datepicker-5" placeholder="Tarix">
+                            <input type="date" name = "date" class="form-control" id="datepicker-5" placeholder="Tarix">
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
-                <button type="button" class="btn btn-primary">Yadda saxla</button>
+                <button type="submit" class="btn btn-primary">Yadda saxla</button>
             </div>
+            </form>
         </div>
     </div>
 </div>
