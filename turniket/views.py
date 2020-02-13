@@ -3,9 +3,12 @@ import openpyxl, re
 from turniket.models import Excel, Staff, Log, Permissions, Shortday
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
-from django.db.models import Count, F, Value
+from django.db.models import Count, F, Sum
+from django.db.models import Value as V
 from django.http import HttpResponse
+import datetime
 import csv
+import time
 
 # Create your views here.
 
@@ -22,29 +25,36 @@ def addperm(request):
 
 
 def index(request):
-    i1 = 0
     staff = Staff.objects.all()
     if "GET" == request.method:
         return render(request, 'turniket/index.html', {"names": Staff.objects.all()})
     else:
         excel_file = request.FILES["excel_file"]
-
-        # you may put validations here to check extension or file size
-
+        stopw = time.time()
+        print("lalal")
+        print("EXCEL file accepted")
+        print("excel file is trying to be loaded")
         wb = openpyxl.load_workbook(excel_file)
-        # f = open("logfile.txt", "a")
-        # print ("")
-
-        # getting all sheets
+        print("excel file loaded")
         sheets = wb.sheetnames
-        # print("sheets", type(sheets),sheets)
-        # f.write(sheets)
         noway = "NODATA"
+        cnt = 11
         # getting a particular sheet
         worksheet = wb["Sheet1"]
         excel_data = list()
+        print("Begin to delete excel old files")
         Excel.objects.all().delete()
-        Log.objects.all().delete()
+        print("Old excel objects deleted")
+        now = datetime.datetime.now()
+        print("stopwatch started")
+        #print(now)
+        threemonthsago = str(now)[:5] + str((int(str(now)[5:7])+9)%12) + str(now)[7:]
+        print("3monthsagosetted")
+        #print(threemonthsago)
+        #print(threemonthsago>"2020-01-30")
+        print("OLD log objects filtered will be deleted ")
+        Log.objects.filter(date__lt=threemonthsago).delete()
+        print("Log objects filtered deleted")
         #excelfileden oxuyub liste yazmaq ve listi dba save etmek
         for row in worksheet.iter_rows():
             row_data = list()
@@ -54,15 +64,24 @@ def index(request):
                 continue
             else:
                 dataRow = Excel(dat=row_data[0], time=row_data[1], action=row_data[3], name=row_data[9])
+                print("row data is selected")
                 dataRow.save()
+                print("row data is saved to excel db")
                 excel_data.append(row_data)
         dateslist = []
-        #faylda distinct insalari iterate edir
+        #faylda distinct insanlari iterate edir
         for data in Excel.objects.values('name').distinct():
-            i1 = i1 + 1
-            #print("Reading ",i1,"st person who is ", data['name'], type(data['name']))
+            print("distinct names in excel file is sorted...")
+            print(data)
+            #print(data)
             #fayldaki adlarin her birini ayriliqda sechib obyektleri dates-e yigir.
+            if len(Staff.objects.filter(name = data['name']))==0:
+                person = Staff(name = data['name'], excel_name = data['name'], status=1)
+                person.save()
+
+
             dates = Excel.objects.filter(name=data['name'])
+
             #obyektleri yigdiqdan sonra iterate edib list yaradir
             for date in dates:
                 dateslist.append(date.dat)
@@ -70,7 +89,10 @@ def index(request):
             dateslist = list(dict.fromkeys(dateslist))
             #her bir date-e gore log db uchun record yigilmaya bashlayir
             #her bir insana aid olan date-leri bir br iterate edirik
+
             for date in dateslist:
+                if len(Log.objects.filter(fullname=data['name'], date=date)) > 0:
+                    continue
                 logdate = date
                 hours = []
                 actions = []
@@ -87,8 +109,7 @@ def index(request):
                 for i in Excel.objects.filter(name=data['name'], dat=date):
                     hours.append(i.time)
                     actions.append(i.action)
-                #print(hours)
-                #print(actions)
+
                 logbuild_exit = 0
                 #gelme tarixi varsa gecikmeni tez gelmeni ve gelme vaxtini tapir
                 if len(hours) > 0 and actions[0] == "вход" and hours[0] != "":
@@ -140,9 +161,11 @@ def index(request):
                     else:
                         actbin.append(0)
                 logbuild_exit = sum(actbin)
-
+                log_modalnum=""
+                log_modalnumdash = ""
                 distractiondec = 0
                 distractionstr = ""
+                log_hours = ""
 
                 for j in range(len(hours) - 1):
                     if actbin[j] == 1 and actbin[j + 1] == 0:
@@ -160,10 +183,16 @@ def index(request):
                         else:
                             entr = '13:00:00'
                        # print("entrleftbefor", entr, left)
-                        if int(entr[:2])>int(left[:2]):
+                        if int(entr[:2])>=int(left[:2]):
                            # print("entrleft", entr, left)
-                            distractiondec = distractiondec + difference(entr, left)
-
+                           if int(hours[j+1][:2])>14 and int(hours[j][:2])<13:
+                               distractiondec = distractiondec + difference(entr, left) - difference('14:00:00', '13:00:00')
+                           else:
+                               distractiondec = distractiondec + difference(entr, left)
+                        log_hours = log_hours + hours[j] + "-" + hours[j+1] + " ;              "
+                        cnt = cnt + 1
+                        log_modalnum = "modal" + str(cnt)
+                        log_modalnumdash = "#" + log_modalnum
 
                 if loggone != noway and logcame != noway:
                     if int(loggone[:2]) >=18:
@@ -186,26 +215,24 @@ def index(request):
                 if len(Permissions.objects.filter(name=data['name'], date=logdate))>0:
                     permission = Permissions.objects.filter(name=data['name'], date=logdate)
                     for perm in permission:
-                        #print(perm.hour1, type(perm.hour1))
                         if int(perm.hour1[:2]) <= 13 <= int(perm.hour2[:2]):
                             nondist = difference(perm.hour2, perm.hour1) - difference('14:00:00', '13:00:00')
                             distractiondec = distractiondec - nondist
                             logbuild_exit = logbuild_exit - 1
+
                 logoveralldec = convertStrToSec(logoverall)
                 logoverallgdec = convertStrToSec(logoverallg)
                 distractionstr = convertTimeToStr(distractiondec)
-
-                # print(logdate, logfullname, "+/-", logcame, loggone,
-                #       logearly_came, "+/-", loglate_came, logearly_gone, loglate_gone, logbuild_exit, distractionstr,
-                #       distractiondec, logoverall, logoverallg)
+                logovertimedec = logoveralldec - logoverallgdec
 
 
-                if convertStrToSec(loglate_came) >0 or len(loglate_came)>6:
-                    # print('loglatecamebin is:', 1)
+
+                if convertStrToSec(loglate_came) >0 or len(loglate_came)>6 or loglate_came!=noway:
                     loglate_camebin = 1
+                    loglate_camedec = convertStrToSec(loglate_came)
                 else:
-                    # print('loglatecamebin is:', 0)
                     loglate_camebin=0
+                    loglate_camedec = 0
 
 
                 #whether the employee has permission for current date
@@ -218,6 +245,10 @@ def index(request):
                     logpermission = "-"
                     logpermissionreason = "-"
 
+                if logearly_gone!=noway:
+                    logearly_gonedec = convertStrToSec(logearly_gone)
+                else:
+                    logearly_gonedec=0
 
                 logdata = Log(
                     date=logdate,
@@ -227,8 +258,10 @@ def index(request):
                     gone=loggone,
                     early_came=logearly_came,
                     late_came=loglate_came,
+                    late_camedec=loglate_camedec,
                     late_camebin = loglate_camebin,
                     early_gone=logearly_gone,
+                    early_gonedec = logearly_gonedec,
                     late_gone=loglate_gone,
                     build_exit=logbuild_exit,
                     distraction=distractionstr,
@@ -236,23 +269,26 @@ def index(request):
                     overall_ghourdec = logoverallgdec,
                     overall_ghour=logoverallg,
                     overall_hour=logoverall,
+                    overtimedec = logovertimedec,
                     permission=logpermission,
-                    permissionreason=logpermissionreason)
-
+                    permissionreason=logpermissionreason,
+                    hour_str = log_hours,
+                    modalnum = log_modalnum,
+                    modalnumdash = log_modalnumdash)
                 logdata.save()
-                print (' ')
+                stopend = time.time()
+                print("Duration:", stopend - stopw)
         return render(request, 'turniket/index.html', {"excel_data": Log.objects.all(), "names": staff})
-
 
 
 
 
 def filter(request):
     data = request.POST.copy()
-    ddd = str(data["date"])
+    ddd = str(data["date1"])
     keys = data.keys()
-    print('from filter func',data, keys)
-    for temp in Log.objects.filter(fullname=data['fullname'], date=str(data["date"])):
+    #print('from filter func',data, keys)
+    for temp in Log.objects.filter(fullname=data['fullname'], date=str(data["date1"])):
         if temp.overall_ghour!="0" and temp.overall_hour!="0":
             graphichour = convertStrToSec(temp.overall_ghour)
             totalhour = convertStrToSec(temp.overall_hour)
@@ -261,78 +297,33 @@ def filter(request):
             totalhour = convertStrToSec("0 s 0 deq 0 san")
         late = convertStrToSec(temp.late_came)
 
+    belateint = int(data["belate"])*60
+    overtimeint = int(data["overtime"])*60
+
+    #print("filterdatas:", data, keys, "\n")
+    #print(belateint, overtimeint)
 
     if data['fullname']!= '':
-        if data['date']!='':
-            if 'overtime' in keys:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]),
-                                                    overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]),
-                                                    overall_hourdec__gt=F("overall_ghourdec"))
-                    print(excel_file)
+        if data['date1']!='':
+            if data['date2']!='':
+                excel_file = Log.objects.filter(fullname=data['fullname'], date__gte=data["date1"], date__lte=data["date2"], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint) )
             else:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]), late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date"]))
-                    print(excel_file)
+                excel_file = Log.objects.filter(fullname=data['fullname'], date=str(data["date1"]), overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint))
         else:
-            if 'overtime' in keys:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], overall_hourdec__gt=F("overall_ghourdec") )
-                    print(excel_file)
-            else:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(fullname=data['fullname'], late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(fullname=data['fullname'] )
-                    print(excel_file)
+            excel_file = Log.objects.filter(fullname=data['fullname'], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint) )
+
+
     else:
-        if data['date'] != '':
-            if 'overtime' in keys:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(date=data['date'], overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(date=data['date'], overall_hourdec__gt=F("overall_ghourdec") )
-                    print(excel_file)
+        if data['date1'] != '':
+            if data['date2']!='':
+                excel_file = Log.objects.filter(date__gte=data["date1"], date__lte=data["date2"], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint))
             else:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(date=data['date'], late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(date=data['date'])
-                    print(excel_file)
+                excel_file = Log.objects.filter(date=data['date1'], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint))
         else:
-            if 'overtime' in keys:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(overall_hourdec__gt=F("overall_ghourdec"), late_camebin__gt=0 )
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.filter(overall_hourdec__gt=F("overall_ghourdec") )
-                    print(excel_file)
-            else:
-                if 'belate' in keys:
-                    excel_file = Log.objects.filter(late_camebin=1)
-                    print(excel_file)
-                else:
-                    excel_file = Log.objects.all()
-                    print(excel_file)
+            excel_file = Log.objects.filter(late_camedec__gte=Value(belateint), overtimedec__gte=Value(overtimeint))
+
     return render(request, 'turniket/index.html', {"excel_data": excel_file, "names": Staff.objects.all()})
 
-
-# def filter(request):
-#     if request.method == "GET":
-#         return render(request, 'turniket/index.html')
-#     return render(request, 'turniket/index2.html')
 
 def addshortday(request):
     if request.method == "GET":
@@ -361,6 +352,7 @@ def difference(hour1, hour2):
         return 0
 
 def convertTimeToStr(time):
+    #print(time)
     if time != 0:
         h = time//3600
         res = str(h) + " s "
@@ -384,35 +376,44 @@ def convertStrToSec(timeline):
         # print('from converting ti dec func: output is :', decimaltime)
         return decimaltime
     else:
-        # print('from converting ti dec func: output is :', 0)
         return 0
 
 
 
-       # namelist = []
-       # person = Staff()
-       # names = Excel.objects.values('name').distinct()
-       # print(names)
-       # for nam in names:
-       #     person = Staff()
-       #     print(nam['name'])
-       #     person.name = nam['name']
-       #     person.excel_name = nam['name']
-       #     person.status = 1
-       #     person.save()
+
 
 def exportreport(request):
+
+    data = request.POST.copy()
+
+    keys = data.keys()
+
+    belateint = int(data["belate"]) * 60
+    overtimeint = int(data["overtime"]) * 60
+    #print(data)
     response = HttpResponse(content_type='text/csv')
-    response['Content-Disposition'] = 'attachment; filename="data.csv"'
+    response['Content-Disposition'] = 'attachment; filename=Hesabat.csv'
+    response.write(u'\ufeff'.encode('utf8'))
 
     writer = csv.writer(response)
-    #writer.writerow(['Ad Soyad', 'İş qrafiki', 'Gəliş', 'Gediş', 'Tez gəliş', 'Tez çıxış', 'Gec gəliş',
-                     #'Gec çıxış', 'Binadan çıxış', 'İşdən yayınma', 'Qrafik daxili iş saatı', 'Ümumi iş saatı',
-                    # 'İcazə saatı','İcazə səbəbi'])
 
-    tdata = Log.objects.all().values_list('fullname','graph', 'came', 'gone', 'early_came', 'early_gone', 'late_gone',
-                                          'build_exit', 'distraction', 'overall_ghour', 'overall_hour', 'permission',
-                                          'permissionreason')
-    for data in tdata:
-        writer.writerow(data)
+    writer.writerow(['Əməkdaş', 'Tarix', 'Giriş', 'Çıxış', 'Gecikmə', 'Tez çıxma'])
+
+    tdata = Log.objects.all().values_list('fullname','date', 'came', 'gone', 'late_came', 'early_gone')
+    names = []
+
+    for log in Log.objects.filter(date__gte=data["date1"], date__lte=data["date2"], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint)):
+        if log.fullname not in names:
+            names.append(log.fullname)
+
+    for name in names:
+        objs = Log.objects.filter(fullname = name, date__gte=data["date1"], date__lte=data["date2"], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint))
+        tdata = objs.values_list('fullname', 'date', 'came', 'gone', 'late_came', 'early_gone')
+        for idata in tdata:
+            writer.writerow(idata)
+        exttuple=[name, ' ', ' ', ' ', convertTimeToStr(objs.aggregate(Sum('late_camedec'))['late_camedec__sum']), convertTimeToStr(objs.aggregate(Sum('early_gonedec'))['early_gonedec__sum'])]
+        exttuple = tuple(exttuple)
+
+        writer.writerow(exttuple)
+
     return response

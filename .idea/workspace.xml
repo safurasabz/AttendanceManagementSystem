@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f51b8e0-0175-44a2-b4c4-319e3a556d9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turniket/migrations/0016_auto_20200210_0359.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turniket/migrations/0017_log_early_gonedec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/static/turniket/css/search_box.css" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/static/turniket/css/search_box.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/templates/turniket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/templates/turniket/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turniket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/views.py" afterDir="false" />
     </list>
@@ -61,18 +60,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Safura\attnd\turniket" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem\turniket\templates\turniket" />
       <recent name="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem\turniket\templates" />
       <recent name="C:\Users\Safura Sabziyeva\PycharmProjects\AttendanceManagementSystem\turniket\static\turniket" />
       <recent name="C:\Users\Safura\AttendanceManagementSystem\turniket" />
       <recent name="C:\Users\Safura\AttendanceManagementSystem\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Safura\attnd\turniket" />
     </key>
   </component>
   <component name="RunManager">
@@ -150,44 +149,56 @@
       <workItem from="1579777678614" duration="9449000" />
       <workItem from="1579872383369" duration="2016000" />
       <workItem from="1580120756191" duration="4873000" />
-      <workItem from="1580296626260" duration="3172000" />
+      <workItem from="1580296626260" duration="28903000" />
+      <workItem from="1580892169201" duration="9605000" />
+      <workItem from="1580989036115" duration="1238000" />
+      <workItem from="1581071364085" duration="51443000" />
+      <workItem from="1581599369325" duration="1362000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ş" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1892" y="147" key="#Deployment" timestamp="1578554641923">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1892" y="147" key="#Deployment/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578554641923" />
-    <state x="402" y="0" key="#attnd" timestamp="1578478986107">
+    <state x="402" y="0" key="#attnd" timestamp="1580384330884">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="402" y="0" key="#attnd/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1578478986107" />
+    <state x="402" y="0" key="#attnd/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580384330884" />
     <state x="402" y="0" key="#attnd/0.0.1366.768@0.0.1366.768" timestamp="1578476829731" />
     <state x="2106" y="295" key="FileChooserDialogImpl" timestamp="1578554441422">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2106" y="295" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578554441422" />
-    <state x="1787" y="105" key="SettingsEditor" timestamp="1578554345281">
-      <screen x="1366" y="0" width="1920" height="1080" />
+    <state x="300" y="55" key="SettingsEditor" timestamp="1581599431032">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="300" y="55" key="SettingsEditor/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1581599431032" />
     <state x="1787" y="105" key="SettingsEditor/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578554345281" />
-    <state x="385" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1580297310255">
+    <state x="385" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1581599408903">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="385" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580297310255" />
+    <state x="385" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1581599408903" />
+    <state x="1907" y="295" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1581071393628" />
     <state x="384" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1578321187972" />
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577605594610">
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581330985395">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1577605594610" />
-    <state x="1852" y="125" width="672" height="676" key="search.everywhere.popup" timestamp="1578554536898">
-      <screen x="1366" y="0" width="1920" height="1080" />
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1581330985395" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581491495866">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1577694585226" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1581491495866" />
     <state x="1852" y="125" width="672" height="676" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578554536898" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1580733698990" />
   </component>
 </project>

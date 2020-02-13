@@ -30,8 +30,10 @@ class Log(models.Model):
     gone = models.CharField(max_length=20)
     early_came = models.CharField(max_length=20)
     late_came = models.CharField(max_length=20)
+    late_camedec = models.IntegerField(null=True)
     late_camebin = models.IntegerField(null=True)
     early_gone = models.CharField(max_length=20)
+    early_gonedec = models.IntegerField(null=True)
     late_gone = models.CharField(max_length=20)
     build_exit = models.IntegerField(null=True)
     distraction = models.CharField(max_length=20)
@@ -39,11 +41,12 @@ class Log(models.Model):
     overall_hourdec = models.IntegerField(null=True)
     overall_ghour = models.CharField(max_length=20)
     overall_hour = models.CharField(max_length=20)
+    overtimedec = models.IntegerField(null=True)
     permission = models.CharField(max_length=20, null=True)
     permissionreason = models.CharField(max_length=20, null=True)
-    # staff_id = models.IntegerField()
-    # graph = models.IntegerField()
-
+    modalnum = models.CharField(max_length=50, null=True)
+    modalnumdash = models.CharField(max_length=50, null=True)
+    hour_str = models.CharField(max_length=300, null=True)
     def __str__(self):
         return self.fullname
 
@@ -64,6 +67,8 @@ class Shortday(models.Model):
 
     def __str__(self):
         return self.date
+
+
 
 
 

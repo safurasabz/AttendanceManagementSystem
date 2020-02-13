@@ -17,9 +17,6 @@
 
     <link rel="stylesheet" href="{% static 'turniket/assets/plugins/bootstrap/css/bootstrap.min.css' %}">
 
-
-    <!--<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css">-->
-
     <!--    DATEPICKER-->
 
     <link rel="stylesheet"
@@ -36,22 +33,6 @@
     <link rel="stylesheet" href="{% static 'turniket/assets/css/theme1.css' %}">
     <link rel="stylesheet" href="{% static 'turniket/css/search_box.css' %}">
 
-
-    <!--    Datepicker js and css starts-->
-
-    {#   <script>#}
-    {#         $(function() {#}
-    {#            $( "#datepicker-5" ).datepicker({#}
-    {#               beforeShowDay : function (date) {#}
-    {#                  var dayOfWeek = date.getDay ();#}
-    {#                  // 0 : Sunday, 1 : Monday, ...#}
-    {#                  if (dayOfWeek == 0 || dayOfWeek == 6) return [false];#}
-    {#                  else return [true];#}
-    {#               }#}
-    {#            });#}
-    {#         });#}
-    {#      </script>#}
-    <!--    Datepicker js and css ends-->
     <style>
         .tableFixHead          { overflow-y: auto; height: 500px; }
 .tableFixHead thead th { position: sticky; top: 0; }
@@ -65,12 +46,6 @@ th     { background:#eee; }
 </head>
 
 <body class="font-montserrat">
-
-{#<form action="{% url "turniket:index" %}" method="post" enctype="multipart/form-data">#}
-{#    <input type="file" name="myFile"><br><br>#}
-{##}
-{#    <input type="submit" value = "Excel yukle" class="btn btn-light"></input>#}
-{#</form>#}
 
 <form action="{% url "turniket:index" %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
@@ -115,48 +90,36 @@ th     { background:#eee; }
                             class="fe fe-plus mr-2"></i>Qısa iş günü əlavə et
                     </button>
                 </div>
+
                 <form method="POST" action="{% url 'turniket:filter' %}" enctype="multipart/form-data">
                     {% csrf_token %}
-                    <div class="input-group">
-                        <input class="input--style-1" name="fullname" type="text" placeholder="Ad soyad">
-                    </div>
-{#                  <div class="col-md-12">#}
-{#                        <div class="input-group">#}
-{#                            <select name="fullname" class="input--style-1" placeholder="Səbəb">#}
-{#                                <option>İşçini seçin</option>#}
-{#                                {% for name in names %}#}
-{#                                    <option>{{name.name}}</option>#}
-{#                                {% endfor %}#}
-{#                            </select>#}
-{#                        </div>#}
-{#                   </div>#}
+                    <br>
+                        <div class="input-group">
+                            <input class="input--style-1" name="fullname" type="text" placeholder="Ad soyad">
+                        </div>
 
-{#                    <div class="input-group">#}
-{#                            <select name="fullname" class="input--style-1">#}
-{#                                <option>İşçini seçin</option>#}
-{#                                {% for name in names %}#}
-{#                                    <option>{{name.name}}</option>#}
-{#                                {% endfor %}#}
-{#                            </select>#}
-{#                    </div>#}
+                        <div class="input-group">
+                            <input class="input--style-1" name="date1" type="date" placeholder="Tarix 1">
+                        </div>
 
-                    <div class="input-group">
-                        <input class="input--style-1" name="date" type="date" placeholder="Tarix">
-                    </div>
+                        <div class="input-group">
+                            <input class="input--style-1" name="date2" type="date" placeholder="Tarix 2">
+                        </div>
 
-                    <div class="p-t-5">
-                        <label class="checkbox-container m-r-45">Gecikmələr
-                            <input type="checkbox" name="belate">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container m-r-45">Əlavə İş
-                            <input type="checkbox" name="overtime">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                        <div class="input-group">
+                            <div class="p-t-5">
+                                <input type="number" name="belate" value="0" width="100"> dəqiqə və daha çox gecikənlər
+                            </div>
+                        </div>
 
+                        <div class="input-group">
+                            <div class="p-t-5">
+                                <input type="number" name="overtime" value="0" width = "100"> dəqiqə və daha çox əlavə işləyənlər
+                            </div>
+                        </div>
                     <button class="btn-submit" type="submit">Axtar</button>
                 </form>
+
             </div>
         </div>
     </div>
@@ -236,12 +199,39 @@ th     { background:#eee; }
                                         <td>{{ row.late_came }}</td>
                                         <td>{{ row.late_gone }}</td>
                                         <td>{{ row.build_exit }}</td>
-                                        <td>{{ row.distraction }}</td>
+{#                                        <td>{{ row.distraction }}</td>#}
+                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="{{row.modalnumdash}}">
+                                            {{ row.distraction }}
+                                        </button></td>
                                         <td>{{ row.overall_ghour }}</td>
                                         <td>{{ row.overall_hour }}</td>
                                         <td>{{ row.permission }}</td>
                                         <td>{{ row.permissionreason }}</td>
                                     </tr>
+                                    <div class="modal fade" id="{{row.modalnum}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">İş saatlarında binadan çıxış-giriş saatları</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                {{row.hour_str}}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 {% endfor %}
 
                                 </tbody>
@@ -255,6 +245,75 @@ th     { background:#eee; }
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hesabat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix">
+
+                       <div class="col-md-12">
+                            <div class="form-group">
+                                <select class="form-control" placeholder="Şöbə">
+                                <option>Şöbə DBdan select</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="datepicker-5" placeholder="Ad Soyad">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="datepicker-5" placeholder="Başlanğıc tarix">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Son tarix">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+
+                             <label class="checkbox-container m-r-45">İşdən yayınmalar
+                                        <input type="checkbox" name="first-class">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label class="checkbox-container m-r-45">İcazə saatları və səbəblər
+                                        <input type="checkbox" name="business">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                    <button type="button" class="btn btn-primary">Yadda saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="section-body">
     <footer class="footer">
@@ -274,113 +333,48 @@ th     { background:#eee; }
 <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
+
+        <form method="POST" action = '{% url 'turniket:exportreport' %}' enctype="multipart/form-data">
+       {% csrf_token %}
         <div class="modal-content">
+
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Hesabat</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-{#            <div class="modal-body">#}
-{#                <div class="row clearfix">#}
-{##}
-{#                    <div class="col-md-12">#}
-{#                        <div class="form-group">#}
-{#                            <select class="form-control" placeholder="Şöbə">#}
-{#                                <option>Şöbə DBdan select</option>#}
-{#                                <option>İnformasiya texnologiyaları</option>#}
-{#                                <option>HR</option>#}
-{#                                <option>Maliyyə</option>#}
-{##}
-{#                            </select>#}
-{#                        </div>#}
-{#                    </div>#}
-{##}
-{#                    <div class="col-md-12">#}
-{#                        <div class="form-group">#}
-{#                            <input type="text" class="form-control" id="datepicker-5" placeholder="Ad Soyad">#}
-{#                        </div>#}
-{#                    </div>#}
-{##}
-{##}
-{#                    <div class="col-md-12">#}
-{#                        <div class="form-group">#}
-{#                            <input type="text" class="form-control" id="datepicker-5" placeholder="Başlanğıc tarix">#}
-{#                        </div>#}
-{#                    </div>#}
-{##}
-{##}
-{#                    <div class="col-md-12">#}
-{#                        <div class="form-group">#}
-{#                            <input type="text" class="form-control" placeholder="Son tarix">#}
-{#                        </div>#}
-{#                    </div>#}
-{##}
-{##}
-{#                    <div class="col-md-12">#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İşdən yayınmalar#}
-{#                            <input type="checkbox" name="first-class">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İcazə saatları və səbəblər#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">Gecikmələr#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">Ümumi iş fəaliyyəti#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">Qrafik daxili iş fəaliyyəti#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İşdən gec çıxma#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">Binadan çıxış sayı#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İş qrafiki#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İşə tez gəlmə#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{##}
-{#                        <label class="checkbox-container m-r-45">İşdən gec getmə#}
-{#                            <input type="checkbox" name="business">#}
-{#                            <span class="checkmark"></span>#}
-{#                        </label>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
 
-                <form action = '{% url 'turniket:exportreport' %}'> <button type="submit" class="btn btn-primary">Çıxarış</button> </form>
+            <div class="input-group">
+                <input class="input--style-1" name="date1" type="date" placeholder="Tarix 1">
+            </div>
+
+            <div class="input-group">
+                <input class="input--style-1" name="date2" type="date" placeholder="Tarix 2">
+            </div>
+
+            <div class="input-group">
+                <div class="p-t-5">
+                    <input type="number" name="belate" value="0" width="100"> dəqiqə gecikənlər
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="p-t-5">
+                    <input type="number" name="overtime" value="0" width = "100"> dəqiqə əlavə işləyənlər
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary">Çıxarış</input>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
             </div>
         </div>
+      </form>
     </div>
 </div>
 
 <!-- Modal -->
-`
+
 <form action="{% url 'turniket:addperm' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -412,11 +406,6 @@ th     { background:#eee; }
 
                             </div>
                     </div>
-{#                    <div class="col-md-12">#}
-{#                        <div class="form-group">#}
-{#                            <input type="text" name="date" class="form-control" id="datepicker-5" placeholder="Tarix: 'İİİİ-AA-GG'">#}
-{#                        </div>#}
-{#                    </div>#}
 
                     <div class="col-md-12">
                         <div class="form-group">
@@ -489,6 +478,7 @@ th     { background:#eee; }
         </div>
     </div>
 </div>
+
 
 <!-- Scripts -->
 <script src="{% static 'turniket/assets/bundles/lib.vendor.bundle.js' %}"></script>
