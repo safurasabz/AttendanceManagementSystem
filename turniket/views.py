@@ -31,11 +31,12 @@ def index(request):
     else:
         excel_file = request.FILES["excel_file"]
         stopw = time.time()
-        print("lalal")
+        print("stopwatch started")
         print("EXCEL file accepted")
         print("excel file is trying to be loaded")
         wb = openpyxl.load_workbook(excel_file)
-        print("excel file loaded")
+        pitsop = time.time()
+        print("excel file loaded in", pitsop-stopw)
         sheets = wb.sheetnames
         noway = "NODATA"
         cnt = 11
@@ -46,7 +47,6 @@ def index(request):
         Excel.objects.all().delete()
         print("Old excel objects deleted")
         now = datetime.datetime.now()
-        print("stopwatch started")
         #print(now)
         threemonthsago = str(now)[:5] + str((int(str(now)[5:7])+9)%12) + str(now)[7:]
         print("3monthsagosetted")
@@ -64,14 +64,14 @@ def index(request):
                 continue
             else:
                 dataRow = Excel(dat=row_data[0], time=row_data[1], action=row_data[3], name=row_data[9])
-                print("row data is selected")
+
                 dataRow.save()
-                print("row data is saved to excel db")
+
                 excel_data.append(row_data)
         dateslist = []
         #faylda distinct insanlari iterate edir
+        print("distinct names in excel file is sorted...")
         for data in Excel.objects.values('name').distinct():
-            print("distinct names in excel file is sorted...")
             print(data)
             #print(data)
             #fayldaki adlarin her birini ayriliqda sechib obyektleri dates-e yigir.
@@ -276,8 +276,8 @@ def index(request):
                     modalnum = log_modalnum,
                     modalnumdash = log_modalnumdash)
                 logdata.save()
-                stopend = time.time()
-                print("Duration:", stopend - stopw)
+        stopend = time.time()
+        print("Duration:", stopend - stopw)
         return render(request, 'turniket/index.html', {"excel_data": Log.objects.all(), "names": staff})
 
 
