@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f51b8e0-0175-44a2-b4c4-319e3a556d9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turniket/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/turniket/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,7 @@
       <workItem from="1581599369325" duration="3539000" />
       <workItem from="1581669183389" duration="13601000" />
       <workItem from="1581937405325" duration="7000" />
-      <workItem from="1581937738161" duration="4449000" />
+      <workItem from="1581937738161" duration="6904000" />
     </task>
     <servers />
   </component>

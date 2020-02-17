@@ -320,7 +320,7 @@ def filter(request):
             else:
                 excel_file = Log.objects.filter(date=data['date1'], overtimedec__gte=V(overtimeint), late_camedec__gte=V(belateint))
         else:
-            excel_file = Log.objects.filter(late_camedec__gte=Value(belateint), overtimedec__gte=Value(overtimeint))
+            excel_file = Log.objects.filter(late_camedec__gte=V(belateint), overtimedec__gte=V(overtimeint))
 
     return render(request, 'turniket/index.html', {"excel_data": excel_file, "names": Staff.objects.all()})
 
