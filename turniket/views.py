@@ -53,7 +53,7 @@ def index(request):
         #print(threemonthsago)
         #print(threemonthsago>"2020-01-30")
         print("OLD log objects filtered will be deleted ")
-        Log.objects.filter(date__lt=threemonthsago).delete()
+        Log.objects.filter(date__gte=threemonthsago).delete()
         print("Log objects filtered deleted")
         #excelfileden oxuyub liste yazmaq ve listi dba save etmek
         for row in worksheet.iter_rows():
@@ -249,33 +249,33 @@ def index(request):
                     logearly_gonedec = convertStrToSec(logearly_gone)
                 else:
                     logearly_gonedec=0
-
-                logdata = Log(
-                    date=logdate,
-                    fullname=logfullname,
-                    graph = loggraph,
-                    came=logcame,
-                    gone=loggone,
-                    early_came=logearly_came,
-                    late_came=loglate_came,
-                    late_camedec=loglate_camedec,
-                    late_camebin = loglate_camebin,
-                    early_gone=logearly_gone,
-                    early_gonedec = logearly_gonedec,
-                    late_gone=loglate_gone,
-                    build_exit=logbuild_exit,
-                    distraction=distractionstr,
-                    overall_hourdec = logoveralldec,
-                    overall_ghourdec = logoverallgdec,
-                    overall_ghour=logoverallg,
-                    overall_hour=logoverall,
-                    overtimedec = logovertimedec,
-                    permission=logpermission,
-                    permissionreason=logpermissionreason,
-                    hour_str = log_hours,
-                    modalnum = log_modalnum,
-                    modalnumdash = log_modalnumdash)
-                logdata.save()
+                if logcame!=noway and loggone!=noway:
+                    logdata = Log(
+                        date=logdate,
+                        fullname=logfullname,
+                        graph = loggraph,
+                        came=logcame,
+                        gone=loggone,
+                        early_came=logearly_came,
+                        late_came=loglate_came,
+                        late_camedec=loglate_camedec,
+                        late_camebin = loglate_camebin,
+                        early_gone=logearly_gone,
+                        early_gonedec = logearly_gonedec,
+                        late_gone=loglate_gone,
+                        build_exit=logbuild_exit,
+                        distraction=distractionstr,
+                        overall_hourdec = logoveralldec,
+                        overall_ghourdec = logoverallgdec,
+                        overall_ghour=logoverallg,
+                        overall_hour=logoverall,
+                        overtimedec = logovertimedec,
+                        permission=logpermission,
+                        permissionreason=logpermissionreason,
+                        hour_str = log_hours,
+                        modalnum = log_modalnum,
+                        modalnumdash = log_modalnumdash)
+                    logdata.save()
         stopend = time.time()
         print("Duration:", stopend - stopw)
         return render(request, 'turniket/index.html', {"excel_data": Log.objects.all(), "names": staff})
